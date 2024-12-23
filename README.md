@@ -84,3 +84,36 @@ The built-in panic() function stops the normal flow of control in a Go program. 
 ### Recover function
 
 Sometimes you might want to avoid a program crash and instead report the error internally. Or perhaps you want to clean up the mess before letting the program crash.
+
+## Data types
+
+### Arrays
+
+Arrays in Go are a fixed-length data structure of a particular type.
+
+### Slices
+
+A slice is a data structure on top of an array or another slice. We refer to the originating array or slice as the underlying array. With a slice, you can access the whole underlying array or only a subsequence of elements.
+
+### Structs
+
+A struct in Go is another data type that could contain zero or more fields of arbitrary types and represent them as a single entity.
+
+```go
+type Person struct {
+    ID        int
+    FirstName string
+    LastName  string
+    Address   string
+}
+
+type Employee struct {
+    Person
+    ManagerID int
+}
+
+type Contractor struct {
+    Person
+    CompanyID int
+}
+```
