@@ -2,17 +2,19 @@
 
 [Link](https://learn.microsoft.com/it-it/training/paths/go-first-steps/)
 
-## Install
+## Intro
+
+### Install
 
 ```go
 go version
 ```
 
-## Go playground
+### Go playground
 
 [Link](https://go.dev/play/)
 
-## First program
+### First program
 
 Official documentation for [fmt](https://pkg.go.dev/fmt) package.
 
@@ -31,3 +33,5 @@ go run main.go
 ```
 
 [fmt](https://pkg.go.dev/fmt) package
+
+## Variables and functions
