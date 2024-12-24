@@ -28,11 +28,11 @@ func main() {
 }
 
 func getInformation(id int) (*Employee, error) {
-	employee, err := apiCallEmployee(1000)
+	employee, err := apiCallEmployee(id)
 	return employee, err
 }
 
 func apiCallEmployee(id int) (*Employee, error) {
-	employee := Employee{LastName: "Doe", FirstName: "John"}
+	employee := Employee{ID: id, LastName: "Doe", FirstName: "John"}
 	return &employee, nil
 }
